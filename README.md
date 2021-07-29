@@ -1,0 +1,1 @@
+Roles in FastAPI is called scopes

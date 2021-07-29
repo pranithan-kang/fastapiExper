@@ -1,0 +1,10 @@
+GET http://localhost:8000/test-depend-1?role=Role_1
+
+###
+GET http://localhost:8000/test-depend-2?role=Role_2
+
+###
+GET http://localhost:8000/test-depend-2?role=Role_3
+
+###
+GET http://localhost:8000/test-custom-named-param?test.name=test_value&dump=1234
