@@ -5,7 +5,7 @@ from sqlalchemy import (
     Date
 )
 
-from model.base_class import Base
+from app.model.base_class import Base
 
 class SampleTableB(Base):
     __tablename__ = "sample_table_b"

@@ -1,4 +1,4 @@
-import helper.jwt_helper as jwt_helper
+import app.helper.jwt_helper as jwt_helper
 from datetime import timedelta
 
 def test_create_access_token():

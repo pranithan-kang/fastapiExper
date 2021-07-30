@@ -1,11 +1,13 @@
 from fastapi import Query, Request
-from schema.sample_tuple import SampleTuple
-from schema.sample_model import SampleModel
 from fastapi import APIRouter, UploadFile, Depends, Security, Body, File
 from fastapi.params import Body
 from pydantic import BaseModel
 import pandas as pd
-import helper.jwt_helper as jwt_helper
+
+from app.schema.sample_tuple import SampleTuple
+from app.schema.sample_model import SampleModel
+
+import app.helper.jwt_helper as jwt_helper
 
 route_exper_router = APIRouter()
 
