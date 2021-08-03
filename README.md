@@ -14,9 +14,9 @@
 │   ├── config.py -- ไฟล์ที่แปล Environment Variable และรวบรวม Configuration ออกมาเป็น Python Constant  
 │   ├── helper -- โฟลเดอร์รวบรวม Utility และ Helper ต่างๆ ที่ใช้ร่วมกันได้หลายที่ภายในโปรเจค  
 │   ├── model -- โฟลเดอร์ของ Class ตัวแทน Table เพื่อติดต่อกับ Database โดยใช้ SQLAlchemy ORM  
-│   ├── repository -- โฟลเดอร์ที่เก็บ Query ที่ติดต่อกับ Database (อาจรวมถึง Business Logic)  
+│   ├── crud -- โฟลเดอร์ที่เก็บ Query ที่ติดต่อกับ Database (อาจรวมถึง Business Logic)  
 │   ├── schema -- โฟลเดอร์เก็บ Pydantic ซึ่งคือ Class ที่ใช้ Validate ข้อมูลขาเข้าและออกจาก Endpoint  
-│   └── service -- โฟลเดอร์เก็บ Service ที่ติดต่อกับ Service/API ภายนอก (ส่วนใหญ่ใช้ช่องทาง HTTP Request)  
+│   └── ext_service -- โฟลเดอร์เก็บ Service ที่ติดต่อกับ Service/API ภายนอก (ส่วนใหญ่ใช้ช่องทาง HTTP Request)  
 ├── main.py -- จุดเริ่มต้น Run โปรเจค  
 ├── pytest.ini -- Configuration ที่เกี่ยวข้องกับ Unit Test  
 ├── requirements.txt -- ไฟล์เก็บ pip Package  
