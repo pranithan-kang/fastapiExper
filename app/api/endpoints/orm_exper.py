@@ -4,7 +4,7 @@ from starlette.requests import Request
 from fastapi.param_functions import Depends, Query
 
 import app.api.dependencies.db as dbm
-from app.repository import sample_a
+from app.crud import sample_a
 
 orm_exper_router = APIRouter(prefix="/orm-exper")
 

@@ -10,7 +10,7 @@ class LogMiddleware(BaseHTTPMiddleware):
         log_obj = {
             "timestamp": date.today(),
             "endpoint": request.url.path,
-            "activity" : None if not hasattr(request.state, "activity") else request.state.activity,
+            "method" : request.method,
             "detail" : None if not hasattr(request.state, "detail") else request.state.detail,
             "status" : "success" if 200 <= response.status_code <= 299 else "failed"
         }
