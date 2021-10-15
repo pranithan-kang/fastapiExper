@@ -4,6 +4,8 @@ from fastapi.params import Body
 from pydantic import BaseModel
 import pandas as pd
 
+from enum import Enum
+
 from app.schema.sample_tuple import SampleTuple
 from app.schema.sample_model import SampleModel
 
@@ -141,3 +143,16 @@ async def test_custom_named_param(
     test_name: str = Query(..., alias="test.name")
 ):
     return test_name
+
+
+class TestEnum(Enum):
+    CONST_1 = "CONST_1"
+    CONST_2 = "CONST_2"
+    CONST_3 = "CONST_3"
+
+
+@route_exper_router.post("/test-enum-param")
+async def test_enum_param(
+    body_param: TestEnum
+):
+    pass
